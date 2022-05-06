@@ -1,14 +1,13 @@
 import React from 'react';
 import 'firebase/firestore';
-import ListadoUsuarios from './listadousuarios';
+import ListadoExperiencias from './listadoexperiencias';
 import Usuario from './usuario';
 
 export default (props) => {
   return(
     <div>
       <Usuario />
-      <ListadoUsuarios />
-
+      <ListadoExperiencias />
     </div>
   )
 }

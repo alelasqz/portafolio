@@ -14,9 +14,13 @@ const Usuario = () => {
     }
 
     return (
-        <ul>
-            Hola {data.nombre}, estos son los usuarios registrados
-        </ul>
+        <div>
+            {data.nombres+' '+data.apellidos}<br/>
+            {data.profesion+' at '+data.empresa}<br/>
+            {data.ciudad+', '+data.pais}<br/>
+            {data.linkedin}<br/>
+            {data.correo}<br/>
+        </div>
     )
 }
 
