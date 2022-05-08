@@ -3,22 +3,12 @@ import 'firebase/firestore';
 import { collection } from 'firebase/firestore';
 import { useFirestore, useFirestoreCollectionData } from 'reactfire';
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'left',
-    color: theme.palette.text.secondary,
-    boxShadow: 'none',
-    borderRadius: 0,
-  }));
-
-const Experiencias = () => {
+const Estudios = () => {
     const firestore                 = useFirestore();
-    const experienciascollectionRef = collection(firestore, 'experiencias')
-    const { status, data }          = useFirestoreCollectionData(experienciascollectionRef);
+    const estudioscollectionRef     = collection(firestore, 'estudios')
+    const { status, data }          = useFirestoreCollectionData(estudioscollectionRef);
 
-    if (status === 'loading') return <div>Cargando experiencias...</div>;
+    if (status === 'loading') return <div>Cargando estudios...</div>;
   
     data.sort((a,b) => {
         var fecha1 = new Date(a.fechadesde);
@@ -35,8 +25,8 @@ const Experiencias = () => {
                 data.map((experiencia) => {
                     return(
                         <li key={experiencia.NO_ID_FIELD}>
-                        {experiencia.cargo}<br/>
-                        {experiencia.nombreempresa}<br/>
+                        {experiencia.instituto}<br/>
+                        {experiencia.titulo}<br/>
                         {'Desde: '+experiencia.fechadesde}<br/>
                         {experiencia.fechahasta ? 'Hasta: '+experiencia.fechahasta : 'Actualidad'}<br/>
                         {experiencia.ubicacion}<br/>
@@ -50,4 +40,4 @@ const Experiencias = () => {
     
 }
 
-export default Experiencias;
+export default Estudios;
