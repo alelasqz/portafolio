@@ -42,8 +42,8 @@ const Usuario = (data) => {
                 <Box
                   component="img"
                   sx={{
-                    maxHeight: { xs: 300, md: 300 },
-                    maxWidth: { xs: 300, md: 300 },
+                    maxHeight: { xs: 400, md: 400 },
+                    maxWidth: { xs: 400, md: 400 },
                     marginTop: '25px',
                     marginBottom: '25px',
                   }}
