@@ -30,17 +30,56 @@
   overflow: hidden;
   display: block;
   background-color: transparent;
+  margin-bottom: 50px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.alex{
+  float: left;
+}
+
+.alex:hover{
+  cursor: pointer;
+}
+
+.link{
+  float: left;
+  width: 0px;
+  height: 0px;
+  display: none;
+  transition: width 0.5s, height 0.5s;
+}
+
+.link:hover{
+  cursor: pointer;
+}
+
+.punto{
+  width: 0px;
+  height: 0px;
+  color: red;
+  float: left;
+  transition: width 0.5s, height 0.5s;
+}
+
+.App-header:hover .punto{
+  width: 5px;
+  height: 5px;
+}
+
+.App-header:hover .link{
+  display: flex;
+}
+
+
+@media (max-width: 600px) {
+  .App-header {
+    position: relative;
+    margin-bottom: 5px;
   }
 }
+
+

@@ -32,13 +32,8 @@ const Footer = (data) => {
   }, [data]);
 
   if(usuario) 
-  return (
+  return (  
     <Container sx={{ flexGrow: 1 }}>
-      <Grid item xs={12}>
-        <Typography variant="caption" color="initial" >
-          Redes Sociales
-        </Typography>
-      </Grid>
       <Grid item xs={12}>
         <IconButton aria-label="delete" onClick={() => window.open(usuario.linkedin, '_blank').focus()}>
           <LinkedInIcon />
