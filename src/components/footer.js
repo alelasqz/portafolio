@@ -1,11 +1,6 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
 import 'firebase/firestore';
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography'
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
-import { Container } from '@mui/material';
 
 //Redes Sociales
 import IconButton from '@mui/material/IconButton';
@@ -14,44 +9,25 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: 'transparent',
-  ...theme.typography.h6,
-  padding: theme.spacing(1),
-  textAlign: 'left',
-  color: theme.palette.text.secondary,
-  boxShadow: 'none',
-  borderRadius: 0,
-}));
-
-const Footer = (data) => {
-  const [usuario, setUsuario] = useState([]);
-
-  useEffect(() => {
-    setUsuario(data.usuario);
-  }, [data]);
-
-  if(usuario) 
+const Footer = () => {
   return (  
-    <Container sx={{ flexGrow: 1 }}>
-      <Grid item xs={12}>
-        <IconButton aria-label="delete" onClick={() => window.open(usuario.linkedin, '_blank').focus()}>
-          <LinkedInIcon />
-        </IconButton>
+    <Grid container spacing={4} direction="row" justifyContent="center" alignItems="flex-end" className="footer">
+      <IconButton aria-label="delete" onClick={() => window.open('https://linkedin.com/in/alelasqz', '_blank').focus()}>
+        <LinkedInIcon />
+      </IconButton>
 
-        <IconButton aria-label="delete" onClick={() => window.open(usuario.instagram, '_blank').focus()}>
-          <InstagramIcon />
-        </IconButton>
+      <IconButton aria-label="delete" onClick={() => window.open('https://instagram.com/alelasqz', '_blank').focus()}>
+        <InstagramIcon />
+      </IconButton>
 
-        <IconButton aria-label="delete" onClick={() => window.open(usuario.facebook, '_blank').focus()}>
-          <FacebookIcon />
-        </IconButton >
+      <IconButton aria-label="delete" onClick={() => window.open('https://facebook.com/alelasqz', '_blank').focus()}>
+        <FacebookIcon />
+      </IconButton >
 
-        <IconButton aria-label="delete" onClick={() => window.open(usuario.github, '_blank').focus()}>
-          <GitHubIcon />
-        </IconButton >
-      </Grid>
-    </Container>
+      <IconButton aria-label="delete" onClick={() => window.open('https://github.com/alelasqz', '_blank').focus()}>
+        <GitHubIcon />
+      </IconButton >
+    </Grid>
   )
 }
 

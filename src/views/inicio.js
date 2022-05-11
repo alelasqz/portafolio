@@ -1,7 +1,6 @@
 import React from 'react';
 import Usuario from '../components/usuario';
 import Introduccion from '../components/introduccion';
-import Footer from '../components/footer';
 import { doc } from 'firebase/firestore';
 import { useFirestoreDocData, useFirestore } from 'reactfire';
 //Grid
@@ -19,7 +18,7 @@ const Inicio = () => {
   }
 
   return(
-    <Container sx={{ flexGrow: 1 }}>
+    <Container className="App" sx={{ flexGrow: 1 }}>
       <Grid container spacing={0}>
         <Grid item xs={12} sm={6} md={6} >
           <Usuario usuario={data}/>
@@ -29,7 +28,6 @@ const Inicio = () => {
             <Introduccion usuario={data}/>
         </Grid>
       </Grid>
-      <Footer usuario={data}/>
     </Container>
   )
 }

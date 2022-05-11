@@ -3,6 +3,7 @@
   color: #333;
   overflow-x: auto;
   display: block;
+  height: 100vh;
 }
 
 .App-logo {
@@ -18,7 +19,6 @@
 
 .App-header {
   min-height: 10vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -27,9 +27,9 @@
   position: sticky;
   top: 0;
   z-index: 200;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: block;
-  background-color: transparent;
+  background-color: white;
   margin-bottom: 50px;
 }
 
@@ -37,41 +37,68 @@
   color: #61dafb;
 }
 
+.link{
+  float: left;
+  color: transparent;
+  transition: transform 0.3s, width 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.link:hover{
+  cursor: pointer;
+  color: red;
+}
+
 .alex{
   float: left;
+  color: #00000099;
+  transition: transform 0.3s;
 }
 
 .alex:hover{
   cursor: pointer;
 }
 
-.link{
-  float: left;
-  width: 0px;
-  height: 0px;
-  display: none;
-  transition: width 0.5s, height 0.5s;
-}
-
-.link:hover{
-  cursor: pointer;
-}
-
 .punto{
-  width: 0px;
-  height: 0px;
   color: red;
   float: left;
-  transition: width 0.5s, height 0.5s;
+  transition: transform 0.3s;
+}
+
+.punto2{
+  color: transparent;
+  float: left;
+  transition: transform 0.3s;
 }
 
 .App-header:hover .punto{
-  width: 5px;
-  height: 5px;
+  transform: translate(-20px);
+}
+
+.App-header:hover .punto2{
+  transform: translate(-20px);
+  color: red;
 }
 
 .App-header:hover .link{
-  display: flex;
+  transform: translate(-20px);
+  color: #00000099;
+}
+
+.footer{
+  min-height: 10vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  width: 100%; 
+  position: sticky;
+  bottom: 0;
+  z-index: 200;
+  overflow: hidden;
+  display: block;
+  background-color: white;
+  margin-bottom: 50px;
 }
 
 

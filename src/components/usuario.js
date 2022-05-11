@@ -14,7 +14,10 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'left',
-  color: theme.palette.text.secondary,
+  fontFamily: 'Roboto',
+  fontWeight: 400,
+  fontSize: '50px',
+  color: '#00000099',
   boxShadow: 'none',
   borderRadius: 0,
 }));
@@ -31,14 +34,12 @@ const Usuario = (data) => {
         <Grid container spacing={0} >
           <Grid item xs={12} sm={12} md={12} >
             <Grid item xs={12} sm={12} md={12} >
-              <Item sx={{textAlign: 'center', backgroundColor: '#fff', color: '#000'}}>
-                <Typography variant="h2">
+              <Item sx={{textAlign: 'center', backgroundColor: '#fff'}}>
                   {usuario.profesion}<br/>
-                </Typography>
               </Item>
             </Grid>
             <Grid item xs={12} sm={12} md={12} >
-              <Item sx={{textAlign: 'center', backgroundColor: '#fff', color: '#000'}}>
+              <Item sx={{textAlign: 'center', backgroundColor: '#fff'}}>
                 <Box
                   component="img"
                   sx={{

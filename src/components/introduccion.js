@@ -11,7 +11,10 @@ const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'left',
-    color: '#000',
+    fontFamily: 'Roboto',
+    fontWeight: 500,
+    fontSize: '20px',
+    color: '#00000099',
     boxShadow: 'none',
     borderRadius: 0
   }));
@@ -30,18 +33,16 @@ const Introduccion = (data) => {
                 <Grid item xs={12} sm={12} md={12}>
                     <Grid item xs={12} sm={12} md={12} >
                         <Item  sx={{textAlign: 'center',  margin: '40px', marginBottom: '20px', fontSize: '18px'}}>
-                            <Typography>
-                                "{usuario.introduccion}"
-                            </Typography>
+                            "{usuario.introduccion}"
                         </Item>
                     </Grid>
 
                     <Grid item xs={12} sm={12} md={12} >
                         <Item sx={{textAlign: 'center'}}>
-                            <Typography variant="body1">
+                            <Typography>
                                 {usuario.nombres+' '+usuario.apellidos}
                             </Typography>
-                            <Typography variant="caption">
+                            <Typography>
                                 {usuario.ubicacion}
                             </Typography>
                         </Item>
