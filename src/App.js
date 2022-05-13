@@ -20,8 +20,8 @@ const App = () => {
         <Header/>
         <Routes>
           <Route path="/portafolio" element={<Inicio />} />
-          <Route path="proyectos" element={<Proyectos />} />
-          <Route path="blog" element={<Blog />} />
+          <Route path="/proyectos" element={<Proyectos />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
         <Footer/>
     </FirestoreProvider>
