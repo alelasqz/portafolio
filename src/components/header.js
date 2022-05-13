@@ -27,12 +27,12 @@ const Header = () => {
       <Grid item xs={7} sm={8} md={4} >
         <Item sx={{alignContent: 'baseline'}}>
           <div className='alex'>
-            <Link className='link alex' to="/portafolio">alex</Link>
+            <Link className='link alex' to="/portafolio/">alex</Link>
           </div>
           <div className='punto'> . </div>
-          <Link className='link' to="/proyectos">proyectos</Link>
+          <Link className='link' to="/proyectos/">proyectos</Link>
           <div className='punto2'> . </div>
-          <Link className='link' to="/blog">blog</Link>
+          <Link className='link' to="/blog/">blog</Link>
         </Item>
       </Grid>
     </Grid>
