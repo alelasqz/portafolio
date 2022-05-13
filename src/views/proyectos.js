@@ -124,6 +124,7 @@ const Proyectos = () => {
             <li>Material UI</li>
             <li>React Native</li>
             <li>Slim</li>
+            <li>Slim</li>
           </ul>
         </Texto>
         <Descripcion>
