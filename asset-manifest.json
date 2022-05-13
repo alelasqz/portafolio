@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.b87634c1.css",
-    "main.js": "/portafolio/static/js/main.886b1523.js",
+    "main.js": "/portafolio/static/js/main.275284e8.js",
     "static/js/787.ae0d8d37.chunk.js": "/portafolio/static/js/787.ae0d8d37.chunk.js",
     "static/media/IMG_2720.jpg": "/portafolio/static/media/IMG_2720.c05f0c0be7b122cfc035.jpg",
     "static/media/cells_continental_app.png": "/portafolio/static/media/cells_continental_app.f137d7f869655373b0ee.png",
@@ -39,11 +39,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/portafolio/static/media/roboto-greek-ext-700-normal.9674bc0ae12c2551d9d1.woff2",
     "index.html": "/portafolio/index.html",
     "main.b87634c1.css.map": "/portafolio/static/css/main.b87634c1.css.map",
-    "main.886b1523.js.map": "/portafolio/static/js/main.886b1523.js.map",
+    "main.275284e8.js.map": "/portafolio/static/js/main.275284e8.js.map",
     "787.ae0d8d37.chunk.js.map": "/portafolio/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b87634c1.css",
-    "static/js/main.886b1523.js"
+    "static/js/main.275284e8.js"
   ]
 }
