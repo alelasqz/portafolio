@@ -19,7 +19,7 @@ const App = () => {
     <FirestoreProvider sdk={firestoreInstance}>
         <Header/>
         <Routes>
-          <Route path="/" element={<Inicio />} />
+          <Route path="/portafolio" element={<Inicio />} />
           <Route path="proyectos" element={<Proyectos />} />
           <Route path="blog" element={<Blog />} />
         </Routes>

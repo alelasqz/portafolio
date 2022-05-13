@@ -29,10 +29,10 @@ const Introduccion = (data) => {
 
     if(usuario)
         return (
-            <Grid container spacing={0} justifyContent="center" direction="row" alignItems="center" sx={{height:'70vh', backgroundColor: '#fff', maxHeight: '430px'}}>
+            <Grid className="cont_info" container spacing={0} justifyContent="center" direction="row" alignItems="center" sx={{height:'70vh', backgroundColor: '#fff', maxHeight: '430px'}}>
                 <Grid item xs={12} sm={12} md={12}>
                     <Grid item xs={12} sm={12} md={12} >
-                        <Item  sx={{textAlign: 'center',  margin: '40px', marginBottom: '20px', fontSize: '18px'}}>
+                        <Item  className="intro" sx={{textAlign: 'center',  margin: '40px', marginBottom: '20px', fontSize: '18px'}}>
                             "{usuario.introduccion}"
                         </Item>
                     </Grid>

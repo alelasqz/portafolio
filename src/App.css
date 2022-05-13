@@ -86,7 +86,7 @@
 }
 
 .footer{
-  min-height: 10vh;
+  min-height: 5vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -99,6 +99,7 @@
   display: block;
   background-color: white;
   margin-bottom: 50px;
+  margin-top: 50px !important;
 }
 
 
@@ -106,6 +107,27 @@
   .App-header {
     position: relative;
     margin-bottom: 5px;
+  }
+
+  .intro{
+    margin-top: 0px !important;
+  }
+
+  .cont_info{
+    height: 10px !important;
+  }
+
+  .footer{
+    display: block;
+  }
+
+  .ProyectosTitulo{
+    margin-top: 0px !important;
+    text-align: center;
+  }
+
+  .offset{
+    display: none !important;
   }
 }
 

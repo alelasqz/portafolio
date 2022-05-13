@@ -19,15 +19,15 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Header = () => {
   return (
-    <Grid container spacing={4} direction="row" justifyContent="center" alignItems="flex-end" className='App-header'>
-      <Grid item xs={3} sm={3} md={8} >
+    <Grid container spacing={0} direction="row" justifyContent="center" alignItems="flex-end" className='App-header'>
+      <Grid item xs={5} sm={4} md={8} >
         <Item>
         </Item>
       </Grid>
-      <Grid item xs={8} sm={8} md={4} >
+      <Grid item xs={7} sm={8} md={4} >
         <Item sx={{alignContent: 'baseline'}}>
           <div className='alex'>
-            <Link className='link alex' to="/">alex</Link>
+            <Link className='link alex' to="/portafolio">alex</Link>
           </div>
           <div className='punto'> . </div>
           <Link className='link' to="/proyectos">proyectos</Link>
