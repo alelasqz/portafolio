@@ -81,7 +81,7 @@ const Proyectos = () => {
           Continental Assist 
         </Titulo>
         <Texto sx={{ }}>
-          App Móvil
+          Aplicación Móvil
         </Texto>
       </Grid>
 
@@ -123,34 +123,35 @@ const Proyectos = () => {
             <li>Firebase</li>
             <li>Material UI</li>
             <li>React Native</li>
+            <li>Slim</li>
           </ul>
         </Texto>
         <Descripcion>
          Métricas
        </Descripcion>
         <Texto sx={{ }}>
-          Número de descargas:
+          Número de descargas
         </Texto>
         <Texto sx={{ }}>
           
         </Texto>
 
         <Texto sx={{ }}>
-          App Store ratings:
+          Calificaciones de la tienda de aplicaciones
         </Texto>
         <Texto sx={{ }}>
           
         </Texto>
 
         <Texto sx={{ }}>
-          Suscriptores activos:
+          Suscriptores activos
         </Texto>
         <Texto sx={{ }}>
           
         </Texto>
 
         <Descripcion>
-          Mi Role
+          Mi Rol
         </Descripcion>
         <Texto sx={{ }}>
         El equipo de desarrollo para la app sólo tenía dos miembros. Yo como desarrollador principal y Luís como diseñador. Recibimos ayuda de algunos directivos de Continental Assist. Si bien los roles se han definido un poco, ambos tuvimos que ir más allá de nuestras capacidades para mantener la aplicación actualizada, entregar, iterar, y probar. He sido el desarrollador principal de la aplicación desde el principio. Codifiqué cada módulo de la aplicación. Trabajé junto a Luís para descubrir información sobre los comentarios y requisitos de los clientes y ayudé a priorizar los objetivos comerciales.
